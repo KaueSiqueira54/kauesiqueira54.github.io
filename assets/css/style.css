@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
 :root, :root[data-theme='dark'] {
     --primary-color: #F0F0F0;
     --primary-bg-color: #111217;
@@ -36,7 +39,7 @@ body {
 }
 
 i {
-    color: var(--text-color);
+    color: var(--icon-color);
 }
 
 a {
@@ -47,6 +50,28 @@ a {
 a:hover {
     color: var(--primary-color);
     font-weight: 600;
+}
+
+p {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    text-align: justify;
+}
+b {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+h1, h2, h3 {
+    font-family: 'League Spartan', Times, serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+
 }
 
 /* img {
@@ -68,17 +93,22 @@ a:hover {
 
 .header__toggle{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header__brand{
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center
 }
 
-#toggletheme {
+#toggleTheme {
     font-size: 1.5rem;
     color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
 }
 
 .menu {
@@ -137,13 +167,103 @@ a:hover {
     gap: 1rem;
 }
 
+.menu--social {
+    gap: 1rem;
+}
 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 0.875rem 1 rem;
+}
+
+.btn span, .btn i {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn--primary span {
+    color: var(--primary-color);
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+}
+
+.main__content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main__content2 img{
+    width: 100%;
+    aspect-ratio: 16/6;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6.25rem 1rem 2rem 1rem;
+    background: var(--secondary-bg-color);
+    margin-top: -5.5rem;
+    gap: 1.25rem;
+}
+
+.skills h2 {
+    text-transform: none;
+    font-size: 2rem;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--icon-color);
+    border-radius: 50rem;
+}
+
+.skills__logo {
+    height: 2.4rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: .875rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
 
 @media (min-width: 768px) {
     .header {
         border-bottom: 1px solid var(--border-color);
         position: fixed;
-        padding: 1rem 6rem;
+        padding: 1rem 4rem;
         background: var(--primary-bg-color);
     }
 
@@ -154,21 +274,29 @@ a:hover {
         display: flex;
     }
     .header__nav,
+    #toogleTheme,
     .header__toggle {
         min-width: 30%;
     }
-    .header__brand img{
-        display: flex;
-        width: 100%;
-        height: 80%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-    }
+
 }
 
 @media (min-width:1400px) {
     .header {
         padding: 1rem 15rem;
+         display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #toogleTheme {
+        display: flex;
+        justify-content: flex-end
     }
 }
