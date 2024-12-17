@@ -1,5 +1,4 @@
 
-
 const toggleTheme = document.getElementById('toggleTheme');
 
 const rootHtml = document.documentElement
@@ -25,3 +24,7 @@ menuLinks.forEach(item => {
     })
 })
 
+window.onload = function () {
+    alert("Seja Bem-Vindo(a) ao meu site!");
+    alert("Se o tema não alternar, utilize outro navegador!")
+};
