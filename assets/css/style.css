@@ -210,6 +210,10 @@ h1, h2, h3 {
     border: 1px solid var(--primary-color);
 }
 
+#pj {
+    padding-top: 1rem;
+}
+
 main, .projects {
     padding: 2.5rem 1rem;
 }
