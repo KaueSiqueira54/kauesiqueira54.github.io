@@ -429,6 +429,16 @@ w
         align-items: flex-start;
     }
 
+    .main__content2 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact {
+        width: 80%;
+        margin: auto;
+    }
+
     .skills {
         padding: 6.25rem 6rem 2rem 6rem;
         margin-top: -6rem;
@@ -521,7 +531,7 @@ w
     }
 
     .card__cover {
-        width: 50%;
+        width: 65%;
     }
 
     .card__title {
@@ -597,8 +607,28 @@ w
     }
 
     .about__content1 {
-        width: 100%;
+        width: 80%;
         padding: 6rem;
+        margin: auto;
+    }
+
+    .projects {
+        width: 80%;
+        margin: auto;
+    }
+
+    .card__cover {
+        width: 65%;
+    }
+
+    .contact {
+        width: 80%;
+        margin: auto;
+    }
+
+    #contato p {
+        width: 80%;
+        margin: auto;
     }
 
 }
