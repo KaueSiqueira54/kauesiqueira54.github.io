@@ -387,6 +387,20 @@ footer p {
     padding: 1rem;
 }
 
+/* Certificados */
+
+.certificados h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.certificados p {
+    padding: 0;
+}
+
+
 /* 768px */
 
 @media (min-width: 768px) {
@@ -484,6 +498,12 @@ w
 
     .about__photo {
         padding-bottom: 2rem;
+    }
+
+    /* Certificados */
+
+    .certificados h3 {
+        font-size: 2rem;
     }
 }
 
@@ -610,6 +630,23 @@ w
         width: 80%;
         padding: 6rem;
         margin: auto;
+    }
+
+    /* certificados */
+
+    .certificados {
+        padding-top: 2rem;
+    }
+
+    .certificados p {
+        padding: 0.2rem;
+    }
+
+    .certificados h3 {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .projects {
